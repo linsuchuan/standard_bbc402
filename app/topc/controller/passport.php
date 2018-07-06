@@ -71,6 +71,7 @@ class topc_ctl_passport extends topc_controller
 
         try
         {
+            //userAuth = pam_facades_userAuth = new pam_auth_user()
             userAuth::setAttemptRemember(input::get('remember',null));
 
             if (userAuth::attempt(input::get('account'), input::get('password')))

@@ -44,6 +44,7 @@ define('XHPROF_DEBUG', true);
 | 尚未完成改造的部分
 |
 */
+define('DEV_CHECKDEMO', true);
 define('WITH_REWRITE', false); // URL REWRITE配置
 define('EDITOR_ALL_SOUCECODE',false);//是否使后台可视化编辑器变为源码编辑模式
 define('DONOTUSE_CSSFRAMEWORK',false);//是否禁用前台系统css框架n

@@ -314,7 +314,7 @@ class pam_auth_user
         {
             $loginName = current(app::get(pam_auth_user::appId)->rpcCall('user.get.account.name', ['user_id' => $userId], 'buyer'));
         }
-
+        //$this->pamAccount = kernel::single('pam_account', 'sysuser');
         $this->pamAccount->setSession($userId, $loginName);
 
         $this->syncCookieWithUserName($this->getLoginName());
